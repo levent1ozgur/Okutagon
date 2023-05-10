@@ -11,7 +11,7 @@ body {
   font-family: monospace;
   font-size: 18px;
 }
-.highlight::selection {
+.highlight{
     background-color: yellow;
 }
 
