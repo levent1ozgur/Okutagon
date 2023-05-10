@@ -1,0 +1,74 @@
+/* Set font family and color */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* Style headings */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Style checkboxes */
+input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+/* Style links */
+a {
+  color: #0077cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style form sections */
+form {
+  margin-top: 2rem;
+}
+
+form > * {
+  margin-bottom: 1rem;
+}
+
+form > h2:first-of-type {
+  margin-top: 0;
+}
+
+/* Style form buttons */
+input[type="submit"] {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #005faa;
+}
+
+/* Add responsive styling */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+}
