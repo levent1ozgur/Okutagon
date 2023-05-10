@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-color: #000;
   color: #0f0;
@@ -15,7 +14,6 @@ body {
     background-color: yellow;
     color: #000;
 }
-
 a {
   color: #0f0;
   text-decoration: none;
@@ -46,6 +44,7 @@ form {
 input[type="checkbox"] {
   display: inline-block;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 input[type="checkbox"] + a {
@@ -64,72 +63,6 @@ p {
   text-align: center;
   margin-top: 50px;
 }
-
-/* specific styles */
-input[name="browser"] + a:before {
-  content: "<";
-}
-
-input[name="browser"] + a:after {
-  content: ">";
-}
-
-input[name="dm"] + a:before {
-  content: "(";
-}
-
-input[name="dm"] + a:after {
-  content: ")";
-}
-
-input[name="rac"] + a:before {
-  content: "{";
-}
-
-input[name="rac"] + a:after {
-  content: "}";
-}
-
-input[name="enc"] + a:before {
-  content: "|";
-}
-
-input[name="enc"] + a:after {
-  content: "|";
-}
-
-input[name="pm"] + a:before {
-  content: "!";
-}
-
-input[name="pm"] + a:after {
-  content: "!";
-}
-
-input[name="mail"] + a:before {
-  content: "?";
-}
-
-input[name="mail"] + a:after {
-  content: "?";
-}
-
-input[name="office"] + a:before {
-  content: "#";
-}
-
-input[name="office"] + a:after {
-  content: "#";
-}
-
-input[name="messaging"] + a:before {
-  content: "&";
-}
-
-input[name="messaging"] + a:after {
-  content: "&";
-}
-
 .frame {
   width: 90%;
   margin: 40px auto;
@@ -156,16 +89,12 @@ button {
    4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
 }
-
-
-
-/* 15 */
-.btn-15 {
+.btn{
   background: #0f0;
   border: none;
   z-index: 1;
 }
-.btn-15:after {
+.btn:after {
   position: absolute;
   content: "";
   width: 0;
@@ -180,13 +109,13 @@ button {
    4px 4px 5px 0px rgba(0,0,0,.1);
   transition: all 0.3s ease;
 }
-.btn-15:hover {
+.btn:hover {
   color: #0f0;
 }
-.btn-15:hover:after {
+.btn:hover:after {
   left: 0;
   width: 100%;
 }
-.btn-15:active {
+.btn:active {
   top: 2px;
 }
