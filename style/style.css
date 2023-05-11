@@ -66,6 +66,61 @@ form {
     color: #18181b;
 }
 
+  #info {
+    font-family: Times New Roman;
+    padding-top: 7.6em;
+    margin-left: 7em;
+    font-size: 25px;
+    margin-right: 7em;
+    text-align: center;
+    color: #991F36;
+  }
+  #win,
+  #macos {
+    width: 5em;
+    height: 2.5em;
+    border-radius: 5px;
+    border: none;
+    font-size: 30px;
+  }
+  
+  #win {
+    background-color: #991F36;
+    color: #18181f;
+    font-family:Times New Roman;
+  }
+  
+  #macos {
+    background: #991F36;
+    color: #fff;
+    font-family: Times New Roman;
+  }
+  
+  #win, #macos {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+  
+  #win:hover,
+  #win:focus,
+  #win:active {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+  
+  #macos:hover,
+  #macos:focus,
+  #macos:active {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+  
 input[type="checkbox"] {
   display: inline-block;
   margin-right: 10px;
