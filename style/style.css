@@ -113,12 +113,12 @@ button {
    4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
 }
-.btn{
+.win{
   background: #991F36;
   border: none;
   z-index: 1;
 }
-.btn:after {
+.win:after {
   position: absolute;
   content: "";
   width: 0;
@@ -133,14 +133,14 @@ button {
    4px 4px 5px 0px rgba(0,0,0,.1);
   transition: all 0.3s ease;
 }
-.btn:hover {
+.win:hover {
   color: #991F36;
 }
-.btn:hover:after {
+.win:hover:after {
   left: 0;
   width: 100%;
 }
-.btn:active {
+.win:active {
   top: 2px;
 }
 li:hover {
