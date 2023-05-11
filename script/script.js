@@ -11,12 +11,38 @@
 			alert(message);
 		}
 		// function to pop-up generated script code
-const generateBtn = document.querySelector('.custom-btn');
+const generateButton = document.querySelector(".custom-btn.btn");
 
-generateBtn.addEventListener('click', () => {
-  const apps = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(app => app.value);
-  const message = `Set-ExecutionPolicy Bypass -Scope Process -Force;\n[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;\niex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'));\nchoco install ${apps.join(' ')} -y;`;
-  alert(message);
+generateButton.addEventListener("click", () => {
+  // Get all the selected checkboxes
+  const selectedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+
+  // If no checkboxes are selected, display a message and return
+  if (selectedCheckboxes.length === 0) {
+    alert('Please select at least one checkbox.');
+    return;
+  }
+
+  // Create an array to store the names of the selected apps
+  const selectedApps = [];
+
+  // Loop through the selected checkboxes and push their values to the array
+  selectedCheckboxes.forEach(function(checkbox) {
+    selectedApps.push(checkbox.value);
+  });
+
+  // Construct the string with the selected apps
+  const selectedAppsString = selectedApps.join(' ');
+
+  // Construct the final command string
+  const commandString = `Set-ExecutionPolicy Bypass -Scope Process -Force;
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
+    iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'));
+    choco install ${selectedAppsString} -y;`;
+
+  // Display a message with the final command string
+  alert('Selected apps: ' + commandString);
 });
+
 
 
