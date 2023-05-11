@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+	<script type="text/javascript" src="/script/script.js"></script>
+    <link rel="shortcut icon" type="image/png" href="style/favicon.png"/>
+
+    <title>okutagon | a tool that designed to help people quickly and easily install applications on windows pc's</title>
+</head>
+<body>
+    <blockquote>
+to get started, simply select the applications you want to install from the list provided. <span class="highlight"><strong>recommended apps is indicated in bold and red marked.</strong></span><br>
+
+once you've made your selections, click the "generate" button, and our tool will generate a chocolatey-based script code that you can use to install all the applications you've chosen.<br>
+
+generated script will be copied automaticly the clipboard, simply paste the generated script code into your powershell <strong><u>in administrator mode</u></strong> and press enter. it's that easy!<br>
+<span class="highlight"><strong>reminder:</strong></span> please note that in order to use this tool, javascript must be enabled in your browser. if you are experiencing issues, please make sure to check your browser settings and enable javascript before trying again.<br>
+<blockquote>
+
+	<form>
+		<h2>web browsers</h2>
+                <input type="checkbox" name="browser" value="google-chrome">chrome<a href="https://www.google.com/intl/tr/chrome/" target="_blank">[link]</a><br>
+                <input type="checkbox" name="browser" value="firefox"><span class="highlight"><strong>firefox</strong></span><a href="https://www.mozilla.org/tr/firefox/download/" target="_blank">[link]</a> - an open Source, independent browser.<br>
+		<input type="checkbox" name="browser" value="brave-browser">brave<a href="https://brave.com/download/" target="_blank">[link]</a> - offers a pretty good out-of-the-box set of privacy and tracker protections.<br>
+		<input type="checkbox" name="browser" value="librewolf"><span class="highlight"><strong>librewolf</strong></span><a href="https://librewolf.net/installation/" target="_blank">[link]</a> - privacy-focused firefox fork.<br>
+		<input type="checkbox" name="browser" value="tor-browser"><span class="highlight"><strong>tor browser</strong></span><a href="https://www.torproject.org/" target="_blank">[link]</a> - defend yourself against tracking and surveillance and circumvent censorship.<br>
+		
+
+		<h2>download managers</h2>
+		<input type="checkbox" name="dm" value="persepolis-download-manager">persepolis download manager<a href="https://persepolisdm.github.io/" target="_blank">[link]</a> - a download manager & a gui for aria2. it’s written in python. persepolis is a sample of free and open source software. it’s developed for gnu/linux distributions, bsds, macos, and microsoft windows.<br>
+		<input type="checkbox" name="dm" value="xdm"><span class="highlight"><strong>xtreme download manager</strong></span><a href="https://xtremedownloadmanager.com/" target="_blank">[link]</a> - a powerful tool to increase download speeds up to 500%, save streaming videos from youtube, dailymotion, facebook, vimeo, google video and 1000+ other websites, resume broken/dead downloads, schedule and convert downloads.<br>
+
+		<h2>remote access and control</h2>
+		<input type="checkbox" name="rac" value="rustdesk">rustdesk<a href="https://rustdesk.com/" target="_blank">[link]</a> - an open-source remote desktop client software, written in rust. works out of the box, full control of your data, with no concerns about security.<br>
+
+		<h2>encryption</h2>
+		<input type="checkbox" name="enc" value="veracrypt">veracrypt<a href="https://veracrypt.fr/en/Home.html" target="_blank">[link]</a> - a free open source disk encryption software for windows, macos and linux.<br>
+		<input type="checkbox" name="enc" value="cryptomator">cryptomator<a href="https://cryptomator.org/" target="_blank">[link]</a> - encrypts your data quickly and easily. afterwards you upload them protected to your favorite cloud service.<br>
+
+		<h2>password managers</h2>
+		<input type="checkbox" name="pm" value="bitwarden"><span class="highlight"><strong>bitwarden</strong></span><a href="https://bitwarden.com/" target="_blank">[link]</a> - an open source cloud based password manager.<br>
+		<input type="checkbox" name="pm" value="keepassxc">keepassxc<a href="https://keepassxc.org/" target="_blank">[link]</a> - securely store passwords using industry standard encryption, no sync just storage.<br>
+
+		<h2>mail services</h2>
+		<input type="checkbox" name="mail" value="thunderbird">thunderbird<a href="https://www.mozilla.org/en-us/thunderbird/" target="_blank">[link]</a> - a free customizable open source email client.<br>
+
+		<h2>office</h2>
+		<input type="checkbox" name="office" value="libreoffice-fresh"><span class="highlight"><strong>libreoffice</strong></span><a href="https://www.libreoffice.org/" target="_blank">[link]</a> - a free and open source offline office.<br>
+
+		<h2>messaging</h2>
+		<input type="checkbox" name="messaging" value="signal"><span class="highlight"><strong>signal</strong></span><a href="https://www.signal.org/" target="_blank">[link]</a> - extreme focus on privacy, combined with all of the features you expect. strong encryption by design. 100% open source.<br>
+                <input type="checkbox" name="messaging" value="telegram">telegram<a href="https://desktop.telegram.org/" target="_blank">[link]</a><br>
+		<input type="checkbox" name="messaging" value="whatsapp">whatsapp<a href="https://www.whatsapp.com/download/" target="_blank">[link]</a><br>
+		<input type="checkbox" name="messaging" value="discord">discord<a href="https://www.discord.com/" target="_blank">[link]</a><br>
+		<input type="checkbox" name="messaging" value="zoom">zoom<a href="https://www.zoom.us/tr/download" target="_blank">[link]</a><br>
+
+
+        <h2>photo editing and management</h2>
+	<input type="checkbox" name="photo" value="gimp">gimp<a href="https://www.gimp.org/" target="_blank">[link]</a> - a free and open source image editor.<br>
+	<input type="checkbox" name="photo" value="inkscape">inkscape <a href="https://inkscape.org/" target="_blank">[link]</a> - a free and open-source vector graphics editor used to create vector images.<br>
+	
+	<h2>video editing</h2>
+	<input type="checkbox" name="video" value="kdenlive">kdenlive<a href="https://kdenlive.org/" target="_blank">[link]</a> - an open source video editor. free and easy to use for any purpose, forever.<br>
+	<input type="checkbox" name="video" value="shotcut">shotcut<a href="https://shotcut.org/" target="_blank">[link]</a> - a free, open source and simple cross-platform video editor.<br>
+
+	<h2>utilities</h2>
+	<input type="checkbox" name="util" value="vlc"><span class="highlight"><strong>vlc media player</strong></span><a href="https://www.videolan.org/vlc/" target="_blank">[link]</a> - a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.<br>
+	<input type="checkbox" name="util" value="audacity">audacity<a href="https://www.audacityteam.org/" target="_blank">[link]</a> - a free, open source, cross-platform audio software, easy-to-use, multi-track audio editor and recorder for windows, macos, gnu/linux and other operating systems.<br>
+	<input type="checkbox" name="util" value="sevenzip"><span class="highlight"><strong>7-zip</strong></span><a href="https://www.7-zip.org/" target="_blank">[link]</a> - a free and open-source file archiver, a utility used to place groups of files within compressed containers known as "archives".<br>
+	<input type="checkbox" name="util" value="blender">blender<a href="https://www.blender.org/" target="_blank">[link]</a> - a free and open-source 3d computer graphics software tool set used for creating animated films, visual effects, art, 3d-printed models, motion graphics, interactive 3d applications, virtual reality, and, formerly, video games.<br>
+	<input type="checkbox" name="util" value="spotify">spotify<a href="https://www.spotify.com/" target="_blank">[link]</a> <span class="highlight"><strong>reminder</strong></span> - if you don't install it and use it as a wep app, <em>it won't take up space on your PC</em>.<br>
+    <input type="checkbox" name="util" value="qbittorrent"><span class="highlight"><strong>qbittorrent</strong></span><a href="https://www.qbittorrent.org/" target="_blank">[link]</a><br>
+
+	<h2>gaming</h2>
+    <input type="checkbox" name="game" value="steam">steam<a href="https://store.steampowered.com/" target="_blank">[link]</a><br>
+    <input type="checkbox" name="game" value="gog-galaxy">gog<a href="https://www.gog.com/" target="_blank">[link]</a><br>
+    <input type="checkbox" name="game" value="epic-games">epic games<a href="https://www.epicgames.com/store/" target="_blank">[link]</a><br>
+    <input type="checkbox" name="game" value="origin">origin<a href="https://www.origin.com/" target="_blank">[link]</a><br>
+    
+    
+
+
+	  
+	
+	<div class="frame">
+  
+  <button class="custom-btn mac">generate</button>
+  
+</div>
+	  
+</body>
+	    <footer>
+   <p>&copy; 2023 &nabla; <a href="https://okutagon.netlify.app/">okutagon</a>. &nabla; all rights reserved. &nabla; <a href="https://okutagon.netlify.app/donation/">donations</a> are welcome.</p>
+</footer>
+
+</html>
