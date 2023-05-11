@@ -12,7 +12,7 @@
 		}
 		// function to generated script code
 document.addEventListener("DOMContentLoaded", function() {
-  const generateButton = document.querySelector(".custom-btn.btn");
+  const generateButton = document.querySelector(".custom-btn.win");
 
   generateButton.addEventListener("click", () => {
     // Get all the selected checkboxes
