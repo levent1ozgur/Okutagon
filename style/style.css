@@ -66,15 +66,7 @@ form {
     color: #18181b;
 }
 
-  #info {
-    font-family: Times New Roman;
-    padding-top: 7.6em;
-    margin-left: 7em;
-    font-size: 25px;
-    margin-right: 7em;
-    text-align: center;
-    color: #991F36;
-  }
+  
   #win,
   #macos {
     width: 5em;
