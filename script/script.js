@@ -41,10 +41,19 @@ document.addEventListener("DOMContentLoaded", function() {
       iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'));
       choco install ${selectedAppsString} -y;`;
 
-    // Display a message with the final command string
-    alert('Selected apps: ' + commandString);
+    // Copy the command string to the clipboard
+    navigator.clipboard.writeText(commandString)
+      .then(() => {
+        // Show a success message
+        alert('the generated chocolatey-based script code has been copied to the clipboard.');
+      })
+      .catch(() => {
+        // Show an error message
+        alert('failed to copy the command to the clipboard.');
+      });
   });
 });
+
 
 
 
