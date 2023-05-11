@@ -34,12 +34,12 @@ h2 {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-form {
+form li {
   max-width: 700px;
   margin: 0 auto;
   margin-top: 50px;
 }
-input[type="checkbox"] {
+input[type="checkbox"] li {
   display: inline-block;
   margin-right: 10px;
 }
