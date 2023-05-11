@@ -14,7 +14,9 @@
 document.addEventListener("DOMContentLoaded", function() {
   const generateButton = document.querySelector(".custom-btn.win");
 
-  generateButton.addEventListener("click", () => {
+  generateButton.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent form submission
+
     // Get all the selected checkboxes
     const selectedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
 
@@ -45,15 +47,14 @@ document.addEventListener("DOMContentLoaded", function() {
     navigator.clipboard.writeText(commandString)
       .then(() => {
         // Show a success message
-        alert('the generated chocolatey-based script code has been copied to the clipboard.');
+        alert('The command has been copied to the clipboard.');
       })
       .catch(() => {
         // Show an error message
-        alert('failed to copy the command to the clipboard.');
+        alert('Failed to copy the command to the clipboard.');
       });
   });
 });
-
 
 
 
