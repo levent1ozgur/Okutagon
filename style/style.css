@@ -198,7 +198,7 @@ button {
 .win:active {
   top: 2px;
 }
-.macos{
+.mac{
   background: #991F36;
   border: none;
   z-index: 1;
@@ -218,14 +218,14 @@ button {
    4px 4px 5px 0px rgba(0,0,0,.1);
   transition: all 0.3s ease;
 }
-.macos:hover {
+.mac:hover {
   color: #991F36;
 }
-.macos:hover:after {
+.mac:hover:after {
   left: 0;
   width: 100%;
 }
-.macos:active {
+.mac:active {
   top: 2px;
 }
 li:hover {
