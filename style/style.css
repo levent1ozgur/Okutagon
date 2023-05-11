@@ -21,6 +21,11 @@ ul {
   margin: 0 auto;
   margin-top: 50px;
 }
+p {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
 a {
   color: #0f0;
   text-decoration: none;
