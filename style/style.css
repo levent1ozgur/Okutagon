@@ -26,17 +26,24 @@ p {
   margin: 0 auto;
   margin-top: 50px;
 }
-a li {
+a {
   color: #991F36;
   text-decoration: none;
   border-bottom: 1px solid #991F36;
 }
-
-a:hover li:hover{
+a:hover {
   background-color: #991F36;
   color: #000;
 }
-
+li {
+  color: #991F36;
+  text-decoration: none;
+  border-bottom: 1px solid #991F36;
+}
+li:hover {
+  background-color: #991F36;
+  color: #000;
+}
 h1 {
   font-size: 48px;
   text-align: center;
