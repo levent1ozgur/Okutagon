@@ -91,7 +91,7 @@ brew install --cask ${selectedAppsString}`;
     navigator.clipboard.writeText(commandString)
       .then(() => {
         // Show a success message
-        alert('the generated chocolatey-based script code has been copied to the clipboard.');
+        alert('the generated homebrew-based script code has been copied to the clipboard.');
       })
       .catch(() => {
         // Show an error message
