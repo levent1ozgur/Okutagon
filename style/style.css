@@ -4,53 +4,64 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #000;
   color: #0f0;
-  font-family: Ink Free;
+  font-family: monospace;
   font-size: 18px;
-}
-.highlight{
-    background-color: yellow;
-    color: #000;
-}
-a {
-  color: #0f0;
-  text-decoration: none;
-  border-bottom: 1px solid #0f0;
-}
-a:hover {
-background-color: #0f0;
-  color: #000;
 }
 blockquote {
   max-width: 700px;
   margin: 0 auto;
   margin-top: 50px;
 }
+a {
+  color: #0f0;
+  text-decoration: none;
+  border-bottom: 1px solid #0f0;
+}
+
+a:hover {
+  background-color: #0f0;
+  color: #000;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 50px;
+}
+
 h2 {
   font-size: 24px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-form li {
- max-width: 700px;
+
+form {
+  max-width: 700px;
   margin: 0 auto;
   margin-top: 50px;
 }
-input[type="checkbox"] li {
-	display: inline-block;
+
+input[type="checkbox"] {
+  display: inline-block;
   margin-right: 10px;
 }
+
 input[type="checkbox"] + a {
   font-size: 16px;
 }
+
 input[type="checkbox"] + a:before {
   content: "[";
 }
+
 input[type="checkbox"] + a:after {
   content: "]";
 }
+
 font-size: 18px;
   text-align: center;
   margin-top: 50px;
