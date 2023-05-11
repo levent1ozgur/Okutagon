@@ -13,11 +13,8 @@
 		// function to generated script code
 document.addEventListener("DOMContentLoaded", function() {
   const generateButton = document.querySelector(".custom-btn.btn");
-  const generatedScript = document.querySelector(".generated-choco-script");
 
-  generateButton.addEventListener("click", (event) => {
-    event.preventDefault(); // prevent default form submit behavior
-
+  generateButton.addEventListener("click", () => {
     // Get all the selected checkboxes
     const selectedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
 
@@ -44,10 +41,11 @@ document.addEventListener("DOMContentLoaded", function() {
       iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'));
       choco install ${selectedAppsString} -y;`;
 
-    // Display the final command string in the generatedScript element
-    generatedScript.innerText = commandString;
+    // Display a message with the final command string
+    alert('Selected apps: ' + commandString);
   });
 });
+
 
 
 
