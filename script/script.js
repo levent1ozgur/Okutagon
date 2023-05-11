@@ -10,9 +10,10 @@
 			var message = "The address has been copied to your clipboard: " + text;
 			alert(message);
 		}
-		// function to pop-up generated script code
+		// function to generated script code
 document.addEventListener("DOMContentLoaded", function() {
   const generateButton = document.querySelector(".custom-btn.win");
+  const generatedScript = document.querySelector(".generated-choco-script");
 
   generateButton.addEventListener("click", () => {
     // Get all the selected checkboxes
@@ -41,10 +42,11 @@ document.addEventListener("DOMContentLoaded", function() {
       iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'));
       choco install ${selectedAppsString} -y;`;
 
-    // Display a message with the final command string
-    alert(commandString);
+    // Display the final command string in the generatedScript element
+    generatedScript.innerText = commandString;
   });
 });
+
 
 
 
