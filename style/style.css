@@ -54,6 +54,9 @@ form {
   margin: 0 auto;
   margin-top: 50px;
 }
+.highlight::selection {
+    background-color: #991F36;
+}
 
 input[type="checkbox"] {
   display: inline-block;
