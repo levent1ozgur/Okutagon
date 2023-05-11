@@ -54,7 +54,7 @@ form {
   margin: 0 auto;
   margin-top: 50px;
 }
-.highlight::selection {
+.highlight {
     background-color: #991F36;
 }
 
