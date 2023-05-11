@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
       choco install ${selectedAppsString} -y;`;
 
     // Display a message with the final command string
-    alert('Selected apps: ' + commandString);
+    alert(commandString);
   });
 });
 
