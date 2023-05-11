@@ -12,10 +12,12 @@
 		}
 		// function to generated script code
 document.addEventListener("DOMContentLoaded", function() {
-  const generateButton = document.querySelector(".custom-btn.win");
+  const generateButton = document.querySelector(".custom-btn.btn");
   const generatedScript = document.querySelector(".generated-choco-script");
 
-  generateButton.addEventListener("click", () => {
+  generateButton.addEventListener("click", (event) => {
+    event.preventDefault(); // prevent default form submit behavior
+
     // Get all the selected checkboxes
     const selectedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
 
@@ -46,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
     generatedScript.innerText = commandString;
   });
 });
+
 
 
 
