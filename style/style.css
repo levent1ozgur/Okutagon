@@ -114,3 +114,6 @@ button {
 .btn:active {
   top: 2px;
 }
+li:hover {
+			cursor: pointer;
+		}
