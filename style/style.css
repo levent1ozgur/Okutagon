@@ -143,6 +143,36 @@ button {
 .win:active {
   top: 2px;
 }
+.macos{
+  background: #991F36;
+  border: none;
+  z-index: 1;
+}
+.macos:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #18181b;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.macos:hover {
+  color: #991F36;
+}
+.macos:hover:after {
+  left: 0;
+  width: 100%;
+}
+.macos:active {
+  top: 2px;
+}
 li:hover {
 cursor: pointer;
 }
