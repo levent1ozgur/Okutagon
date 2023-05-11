@@ -203,7 +203,7 @@ button {
   border: none;
   z-index: 1;
 }
-.macos:after {
+.mac:after {
   position: absolute;
   content: "";
   width: 0;
