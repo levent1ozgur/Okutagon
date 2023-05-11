@@ -6,9 +6,9 @@
 }
 
 body {
-  background-color: #000;
-  color: #0f0;
-  font-family: Ink Free;
+  background-color: #18181b;
+  color: #991F36;
+  font-family: Times New Roman;
   font-size: 18px;
 }
 blockquote {
@@ -27,13 +27,13 @@ p {
   margin-top: 50px;
 }
 a {
-  color: #0f0;
+  color: #991F36;
   text-decoration: none;
-  border-bottom: 1px solid #0f0;
+  border-bottom: 1px solid #991F36;
 }
 
 a:hover {
-  background-color: #0f0;
+  background-color: #991F36;
   color: #000;
 }
 
@@ -87,10 +87,10 @@ button {
 .custom-btn {
   width: 130px;
   height: 40px;
-  color: #000;
+  color: #18181b;
   border-radius: 5px;
   padding: 10px 25px;
-  font-family: monospace;
+  font-family: Times New Roman;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
@@ -103,7 +103,7 @@ button {
   outline: none;
 }
 .btn{
-  background: #0f0;
+  background: #991F36;
   border: none;
   z-index: 1;
 }
@@ -115,7 +115,7 @@ button {
   top: 0;
   right: 0;
   z-index: -1;
-  background-color: #000;
+  background-color: #18181b;
   border-radius: 5px;
    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
    7px 7px 20px 0px rgba(0,0,0,.1),
@@ -123,7 +123,7 @@ button {
   transition: all 0.3s ease;
 }
 .btn:hover {
-  color: #0f0;
+  color: #991F36;
 }
 .btn:hover:after {
   left: 0;
