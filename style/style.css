@@ -54,17 +54,6 @@ input[type="checkbox"] + a:after {
 font-size: 18px;
   text-align: center;
   margin-top: 50px;
-
-    
-          
-            
-    
-
-          
-          Expand Down
-    
-    
-  
 }
 .frame {
   width: 90%;
@@ -123,5 +112,5 @@ button {
   top: 2px;
 }
 li:hover {
-			cursor: pointer;
+cursor: pointer;
 }
