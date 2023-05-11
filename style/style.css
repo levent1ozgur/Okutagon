@@ -20,7 +20,7 @@ a {
   border-bottom: 1px solid #0f0;
 }
 a:hover {
-  background-color: #0f0;
+background-color: #0f0;
   color: #000;
 }
 blockquote {
@@ -34,17 +34,14 @@ h2 {
   margin-bottom: 10px;
 }
 form li {
-  max-width: 700px;
+ max-width: 700px;
   margin: 0 auto;
   margin-top: 50px;
 }
 input[type="checkbox"] li {
-  display: inline-block;
+	display: inline-block;
   margin-right: 10px;
 }
-
-    @@ -53,7 +48,7 @@ input[type="checkbox"] + a:before {
-  
 input[type="checkbox"] + a {
   font-size: 16px;
 }
@@ -54,10 +51,20 @@ input[type="checkbox"] + a:before {
 input[type="checkbox"] + a:after {
   content: "]";
 }
-p {
-  font-size: 18px;
+font-size: 18px;
   text-align: center;
   margin-top: 50px;
+
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
 }
 .frame {
   width: 90%;
