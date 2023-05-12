@@ -172,4 +172,92 @@ button {
 .mac:active {
   top: 2px;
 }
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  
+  p, li, form {
+    max-width: 90%;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  .frame {
+    margin: 20px auto;
+  }
+  
+  .custom-btn {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
+
+/* For screens between 600px and 900px */
+@media (min-width: 600px) and (max-width: 900px) {
+  body {
+    font-size: 16px;
+  }
+  
+  p, li, form {
+    max-width: 80%;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 22px;
+  }
+  
+  .frame {
+    margin: 30px auto;
+  }
+  
+  .custom-btn {
+    width: 110px;
+    height: 35px;
+    font-size: 16px;
+  }
+}
+
+/* For screens larger than 900px */
+@media (min-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+  
+  p, li, form {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 48px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  .frame {
+    margin: 40px auto;
+  }
+  
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
 
