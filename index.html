@@ -1,47 +1,42 @@
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-	<script type="text/javascript" src="/script/script.js"></script>
-    <link rel="shortcut icon" type="image/png" href="style/favicon.png"/>
-
-    <title>okutagon | a tool that designed to help people quickly and easily install applications on windows pc's</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>okutagon - install applications quickly and easily</title>
+<meta name="description" content="okutagon is a tool that helps you quickly and easily install applications on your pc using chocolatey for windows and homebrew for macos/linux. select the applications you want to install, generate a script code, and install them all at once.">
+	
+<!-- stylesheets -->
+<link rel="stylesheet" href="style/style.css">
+	
+<!-- favicon -->
+<link rel="shortcut icon" type="image/png" href="style/favicon.png">
+	
+<!-- javascript -->
+<script type="text/javascript" src="/script/script.js" async></script>
+	
 </head>
 <body>
-	<div id="page-container">
-   <div id="content-wrap">
-	  <header style="text-align: center;">
-		<img src="style/favicon.png" alt="okutagon-logo" style="width: 250px; height: 250px;">
-		</header>
- <blockquote>
-<span class="highlight"><strong>okutagon</strong></span> is a tool that designed to help you quickly and easily install applications on your pc, <em><u>for example right after formatting the pc</u></em>.this tool uses the package manager called <a href="https://chocolatey.org/how-chocolatey-works" target="_blank">chocolatey</a> for windows and <a href="https://brew.sh/" target="_blank">homebrew</a> for macos/linux. with just a few clicks, you can select the applications you want to install and generate a script code that will automatically install them all at once.<br>
+<div id="page-container">
+<div id="content-wrap">
+<header style="text-align: center;">
+<img src="style/favicon.png" alt="okutagon-logo" style="width: 250px; height: 250px;">
+</header>
+<h1>install applications quickly and easily with okutagon</h1>
+<p><span class="highlight"><strong>okutagon</strong></span> is a tool designed to help you quickly and easily install applications on your pc, for example right after formatting the pc. this tool uses the package manager called <a href="https://chocolatey.org/how-chocolatey-works" target="_blank" rel="noopener noreferrer">chocolatey</a> for windows and <a href="https://brew.sh/" target="_blank" rel="noopener noreferrer">homebrew</a> for macos/linux. with just a few clicks, you can select the applications you want to install and generate a script code that will automatically install them all at once.</p>
+<p>to get started, simply select the applications you want to install from the list provided. <span class="highlight"><strong>recommended apps are indicated in bold and red.</strong></span></p>
+<p>once you've made your selections, click the "generate" button, and our tool will generate a script code that you can use to install all the applications you've chosen.</p>
+<p>the generated script will be copied automatically to the clipboard. simply paste the generated script code into your powershell <strong>in administrator mode</strong> in windows or terminal in macos/linux and press enter. it's that easy!</p>
+<p><strong>note:</strong> please note that in order to use this tool, javascript must be enabled in your browser. if you are experiencing issues, please make sure to check your browser settings and enable javascript before trying again.</p>
 
-to get started, simply select the applications you want to install from the list provided. <span class="highlight"><strong>recommended apps is indicated in bold and red marked.</strong></span><br>
-
-once you've made your selections, click the "generate" button, and our tool will generate a script code that you can use to install all the applications you've chosen.<br>
-
-generated script will be copied automaticly the clipboard, simply paste the generated script code into your powershell <strong><u>in administrator mode</u></strong> in windows or terminal in macos/linux and press enter. it's that easy!<br>
-<span class="highlight"><strong>reminder:</strong></span> please note that in order to use this tool, javascript must be enabled in your browser. if you are experiencing issues, please make sure to check your browser settings and enable javascript before trying again.<br>
-<blockquote>
-    <br>
-  
-    <br>
-    
-<button id="win" onclick="window.location.href='https://okutagon.netlify.app/windows'">
-  windows
-</button>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    <button id="macos" onclick="window.location.href='https://okutagon.netlify.app/macos'">
-     macos/linux
-    </button> 
-
-	    </div>
-   <footer id="footer">
-  <p>&copy; 2023 &nabla; <a href="https://okutagon.netlify.app/">okutagon</a>. &nabla; all rights reserved. &nabla; <a href="https://okutagon.netlify.app/donation/">donations</a> are welcome.</p>
+<div class="frame">
+<button class="custom-btn win"  onclick="window.location.href='https://okutagon.netlify.app/windows'">windows</button>
+<button class="custom-btn mac" onclick="window.location.href='https://okutagon.netlify.app/macos'">macos/linux</button> 
+</div>
+</div>
+<footer id="footer">
+<p>&copy; 2023 &nabla; <a href="https://okutagon.netlify.app/">okutagon</a>. all rights reserved. <a href="https://okutagon.netlify.app/donation/">donations</a> are welcome.</p>
 </footer>
- </div>
+</div>
 </body>
-
 </html>
