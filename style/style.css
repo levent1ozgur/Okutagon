@@ -236,10 +236,4 @@ button {
 li:hover {
 cursor: pointer;
 }
-.bmc-button {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 9999;
-}
 
