@@ -1,25 +1,25 @@
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>okutagon - install applications quickly and easily</title>
+    <meta name="description" content="okutagon is a tool that allows you to quickly and easily install applications on your pc using homebrew-based script code.">
     <link rel="stylesheet" href="style/style.css">
-	<script type="text/javascript" src="/script/script.js"></script>
-    <link rel="shortcut icon" type="image/png" href="style/favicon.png"/>
-
-    <title>okutagon | a tool that designed to help people quickly and easily install applications on windows pc's</title>
+    <link rel="shortcut icon" type="image/png" href="style/favicon.png">
 </head>
 <body>
-	<div id="page-container">
-   <div id="content-wrap">
-    <blockquote>
-to get started, simply select the applications you want to install from the list provided. <span class="highlight"><strong>recommended apps is indicated in bold and red marked.</strong></span><br>
-
-once you've made your selections, click the "generate" button, and our tool will generate a homebrew-based script code that you can use to install all the applications you've chosen.<br>
-
-generated script will be copied automaticly the clipboard, simply paste the generated script code into your terminal and press enter. it's that easy!<br>
-<span class="highlight"><strong>reminder:</strong></span> please note that in order to use this tool, javascript must be enabled in your browser. if you are experiencing issues, please make sure to check your browser settings and enable javascript before trying again.<br>
-<blockquote>
+    <div id="page-container">
+        <div id="content-wrap">
+<header style="text-align: center;">
+<img src="style/favicon.png" alt="okutagon-logo" style="width: 250px; height: 250px;">
+</header>
+            <h1>install applications quickly and easily with okutagon</h1>
+            <p>to get started, simply select the applications you want to install from the list provided. <strong>recommended apps are indicated in bold and red.</strong></p>
+            <p>once you've made your selections, click the "generate" button, and our tool will generate a homebrew-based script code that you can use to install all the applications you've chosen.</p>
+            <p>the generated script will be copied automatically to your clipboard. simply paste the script code into your terminal and press enter. it's that easy!</p>
+            <p><strong>note:</strong> please enable javascript in your browser to use this tool. if you experience issues, check your browser settings and enable javascript before trying again.</p>
 
 	<form>
 		<h2>web browsers</h2>
@@ -38,7 +38,7 @@ generated script will be copied automaticly the clipboard, simply paste the gene
 		<input type="checkbox" name="rac" value="rustdesk">rustdesk<a href="https://rustdesk.com/" target="_blank">[link]</a> - an open-source remote desktop client software, written in rust. works out of the box, full control of your data, with no concerns about security.<br>
 
 		<h2>encryption</h2>
-		<input type="checkbox" name="enc" value="veracrypt">veracrypt<a href="https://veracrypt.fr/en/Home.html" target="_blank">[link]</a> - a free open source disk encryption software for windows, macos and linux.<br>
+		<input type="checkbox" name="enc" value="veracrypt">veracrypt<a href="https://veracrypt.fr/en/home.html" target="_blank">[link]</a> - a free open source disk encryption software for windows, macos and linux.<br>
 		<input type="checkbox" name="enc" value="cryptomator">cryptomator<a href="https://cryptomator.org/" target="_blank">[link]</a> - encrypts your data quickly and easily. afterwards you upload them protected to your favorite cloud service.<br>
 
 		<h2>password managers</h2>
@@ -68,11 +68,11 @@ generated script will be copied automaticly the clipboard, simply paste the gene
 	<input type="checkbox" name="video" value="shotcut">shotcut<a href="https://shotcut.org/" target="_blank">[link]</a> - a free, open source and simple cross-platform video editor.<br>
 
 	<h2>utilities</h2>
-	<input type="checkbox" name="util" value="vlc"><span class="highlight"><strong>vlc media player</strong></span><a href="https://www.videolan.org/vlc/" target="_blank">[link]</a> - a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.<br>
+	<input type="checkbox" name="util" value="vlc"><span class="highlight"><strong>vlc media player</strong></span><a href="https://www.videolan.org/vlc/" target="_blank">[link]</a> - a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as dvds, audio cds, vcds, and various streaming protocols.<br>
 	<input type="checkbox" name="util" value="audacity">audacity<a href="https://www.audacityteam.org/" target="_blank">[link]</a> - a free, open source, cross-platform audio software, easy-to-use, multi-track audio editor and recorder for windows, macos, gnu/linux and other operating systems.<br>
 	<input type="checkbox" name="util" value="sevenzip"><span class="highlight"><strong>7-zip</strong></span><a href="https://www.7-zip.org/" target="_blank">[link]</a> - a free and open-source file archiver, a utility used to place groups of files within compressed containers known as "archives".<br>
 	<input type="checkbox" name="util" value="blender">blender<a href="https://www.blender.org/" target="_blank">[link]</a> - a free and open-source 3d computer graphics software tool set used for creating animated films, visual effects, art, 3d-printed models, motion graphics, interactive 3d applications, virtual reality, and, formerly, video games.<br>
-	<input type="checkbox" name="util" value="spotify">spotify<a href="https://www.spotify.com/" target="_blank">[link]</a> <span class="highlight"><strong>reminder</strong></span> - if you don't install it and use it as a wep app, <em>it won't take up space on your PC</em>.<br>
+	<input type="checkbox" name="util" value="spotify">spotify<a href="https://www.spotify.com/" target="_blank">[link]</a> <span class="highlight"><strong>reminder</strong></span> - if you don't install it and use it as a wep app, <em>it won't take up space on your pc</em>.<br>
     <input type="checkbox" name="util" value="qbittorrent"><span class="highlight"><strong>qbittorrent</strong></span><a href="https://www.qbittorrent.org/" target="_blank">[link]</a><br>
 
 	<h2>gaming</h2>
@@ -81,22 +81,14 @@ generated script will be copied automaticly the clipboard, simply paste the gene
     <input type="checkbox" name="game" value="epic-games">epic games<a href="https://www.epicgames.com/store/" target="_blank">[link]</a><br>
     <input type="checkbox" name="game" value="origin">origin<a href="https://www.origin.com/" target="_blank">[link]</a><br>
     
-    
-
-
-	  
-	
-	<div class="frame">
-  
-  <button class="custom-btn mac">generate</button>
-  
-</div>
-	  
-</div>
- <footer id="footer">
-  <p>&copy; 2023 &nabla; <a href="https://okutagon.netlify.app/">okutagon</a>. &nabla; all rights reserved. &nabla; <a href="https://okutagon.netlify.app/donation/">donations</a> are welcome.</p>
-</footer>
- </div>
+     <div class="frame">
+                <button class="custom-btn mac">generate</button>
+            </div>
+        </div>
+        <footer id="footer">
+            <p>&copy; 2023 &nabla; <a href="https://okutagon.netlify.app/">okutagon</a>. all rights reserved. <a href="https://okutagon.netlify.app/donation/">donations</a> are welcome.</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="/script/script.js"></script>
 </body>
-
 </html>
