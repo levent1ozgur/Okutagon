@@ -136,7 +136,7 @@ button {
   transition: all 0.3s ease;
 }
 .win:hover {
-  color: #991F36;
+  color: #18181b;
 }
 .win:hover:after {
   left: 0;
@@ -166,7 +166,7 @@ button {
   transition: all 0.3s ease;
 }
 .mac:hover {
-  color: #991F36;
+  color: #18181b;
 }
 .mac:hover:after {
   left: 0;
