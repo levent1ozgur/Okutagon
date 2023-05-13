@@ -28,6 +28,9 @@ a:hover {
   background-color: #991F36;
   color: #000;
 }
+ul {
+  list-style-type: none;
+}
 li {
   color: #991F36;
   text-decoration: none;
