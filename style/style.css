@@ -25,8 +25,8 @@ a {
   border-bottom: 1px solid #991F36;
 }
 a:hover {
-  background-color: #991F36;
-  color: #000;
+  background-color: #F1F0EF;
+  color: #18181b;
 }
 ul {
   list-style-type: none;
@@ -40,8 +40,8 @@ max-width: 700px;
   margin-top: 50px;
 }
 li:hover {
-  background-color: #991F36;
-  color: #000;
+  background-color: #F1F0EF;
+  color: #18181b;
 cursor: pointer;
 }
 h1 {
