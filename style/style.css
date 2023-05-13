@@ -40,7 +40,7 @@ max-width: 700px;
   margin-top: 50px;
 }
 li:hover {
-  background-color: #991F36;
+  background-color: #F1F0EF;
   color: #000;
 cursor: pointer;
 }
@@ -76,7 +76,7 @@ form {
   margin-top: 50px;
 }
 .highlight {
-    background-color: #991F36;
+    background-color: #F1F0EF;
     color: #18181b;
 }
   
@@ -116,7 +116,7 @@ button {
   outline: none;
 }
 .win{
-  background: #991F36;
+  background: #F1F0EF;
   border: none;
   z-index: 1;
 }
@@ -146,7 +146,7 @@ button {
   top: 2px;
 }
 .mac{
-  background: #991F36;
+  background: #F1F0EF;
   border: none;
   z-index: 1;
 }
