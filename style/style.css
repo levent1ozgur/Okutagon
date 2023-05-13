@@ -40,7 +40,7 @@ max-width: 700px;
   margin-top: 50px;
 }
 li:hover {
-  background-color: #F1F0EF;
+  background-color: #991F36;
   color: #000;
 cursor: pointer;
 }
@@ -128,7 +128,7 @@ button {
   top: 0;
   right: 0;
   z-index: -1;
-  background-color: #18181b;
+  background-color: #991F36;
   border-radius: 5px;
    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
    7px 7px 20px 0px rgba(0,0,0,.1),
@@ -158,7 +158,7 @@ button {
   top: 0;
   right: 0;
   z-index: -1;
-  background-color: #18181b;
+  background-color: #991F36;
   border-radius: 5px;
    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
    7px 7px 20px 0px rgba(0,0,0,.1),
