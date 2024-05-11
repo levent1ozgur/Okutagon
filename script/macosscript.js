@@ -1,4 +1,4 @@
-console.log("Script is executing...");
+console.log("Ü");
 document.addEventListener("DOMContentLoaded", function () {
   const selectedAppsContainer = document.getElementById(
     "selected-apps-container"
