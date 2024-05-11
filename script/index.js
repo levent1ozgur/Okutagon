@@ -1,3 +1,5 @@
+console.log("Script is executing...");
+
 document.addEventListener("DOMContentLoaded", function() {
   // Check if JavaScript is enabled
   const jsEnabled = document.getElementById("js-enabled");
