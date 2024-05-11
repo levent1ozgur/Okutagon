@@ -1,3 +1,4 @@
+console.log("Script is executing...");
 document.addEventListener("DOMContentLoaded", function() {
   const generateButton = document.querySelector(".custom-btn.win");
 
