@@ -22,7 +22,7 @@ Say goodbye to tedious manual setups and let Okutagon streamline your workflow.
 
 ## 🤝 Contributing  
 
-We welcome contributions from the community! Found a bug, have a feature request, or want to improve the code? Visit the [GitHub repository](https://github.com/levent1ozgur/okutagon) and open an issue or pull request. Let's build something amazing together.  
+We welcome contributions from the community! Found a bug, have a feature request, or want to improve the code? Visit the [GitHub repository](https://github.com/levent1ozgur/okutagon) and open an issue or pull request.
 
 ---
 
