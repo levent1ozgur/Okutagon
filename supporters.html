@@ -1,103 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
   <title>Supporters</title>
-  <style>
-    * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-    body {
-  background-color: #18181b;
-  color: #991F36;
-  font-family: Times New Roman;
-  font-size: 18px;
-
-}
-    h1 { 
- font-size: 48px;
-  text-align: center;
-  margin-top: 50px;
- }
-    p {
-  max-width: 700px;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-a {
-  color: #991F36;
-  text-decoration: none;
-  border-bottom: 1px solid #991F36;
-}
-a:hover {
-  background-color: #F1F0EF;
-  color: #18181b;
-}
-    .supporter-list { 
-color: #991F36;
-  text-decoration: none;
-  border-bottom: 1px solid #991F36;
-max-width: 700px;
-  margin: 0 auto;
-  margin-top: 50px;
- }
-    .supporter { margin-bottom: 10px; }
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2rem;            /* Footer height */
-}
-  </style>
-  <!-- favicon -->
-  <link rel="shortcut icon" type="image/png" href="style/favicon.png">  
-  
 </head>
+
 <body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <header style="text-align: center;">
+        <h1>Thank You to Our Supporters!</h1>
+      </header>
 
-  <h1>Thank You to Our Supporters!</h1>
-  <p id="status">Loading supporters...</p>
-  <ul class="supporter-list" id="supporter-list"></ul>
+      <p id="status">Loading supporters...</p>
+      <ul class="supporter-list" id="supporter-list"></ul>
 
-  <script>
-    // URL of your Cloudflare Worker
-    const workerUrl = 'https://patreon-supporters.okutagon.workers.dev/';
-
-    // Fetch the supporter data from the Cloudflare Worker
-    fetch(workerUrl)
-      .then(response => response.text())
-      .then(data => {
-        const supporterList = document.getElementById('supporter-list');
-        const status = document.getElementById('status');
-
-        if (data.includes('There are currently 0 supporters')) {
-          status.textContent = 'There are currently 0 supporters on Patreon.';
-        } else {
-          status.textContent = 'Thank you for the supporters:';
-          // Add each supporter to the list
-          const supporters = data.match(/<li>(.*?)<\/li>/g);
-          if (supporters) {
-            supporters.forEach(supporter => {
-              const listItem = document.createElement('li');
-              listItem.className = 'supporter';
-              listItem.innerHTML = supporter.replace(/<li>|<\/li>/g, '');
-              supporterList.appendChild(listItem);
-            });
-          }
-        }
-      })
-      .catch(err => {
-        console.error('Error fetching supporters:', err);
-        const status = document.getElementById('status');
-        status.textContent = 'There was an error loading the supporters list.';
-      });
-  </script>
-<footer id="footer">
-      <p>&copy; 2025 &#11203; <a href="https://okutagon.netlify.app/">okutagon</a>. | <a href="https://okutagon.netlify.app/donation/">donations</a> are welcome. | <a href="https://okutagon.netlify.app/supporters/">supporters page.</a></p>
-    </footer>
+      <footer id="footer">
+        <p>&copy; 2025 &#11203; <a href="https://okutagon.netlify.app/">Okutagon</a>. | <a href="https://okutagon.netlify.app/donation/">Donations</a> are welcome. | <a href="https://okutagon.netlify.app/supporters/">Supporters</a> page.</p>
+      </footer>
+    </div>
+  </div>
 </body>
+<script type="text/javascript" src="script/supporters.js" async></script> -->
 </html>
