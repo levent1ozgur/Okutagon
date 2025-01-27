@@ -28,10 +28,7 @@ We welcome contributions from the community! Found a bug, have a feature request
 
 ## 📄 License  
 
-Okutagon is released under the **Creative Commons Attribution-NonCommercial (CC BY-NC)** license.  
-
-- **You Can**: Use, modify, and share Okutagon for non-commercial purposes.  
-- **You Can't**: Use Okutagon for commercial purposes without explicit permission.  
+ [Okutagon](https://okutagon.netlify.app) by [Levent Özgür](https://github.com/levent1ozgur) is licensed under [CC BY-NC-SA 4.0![](https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1)![](https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1)![](https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1)![](https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1)](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1) 
 
 For full details, please refer to the [LICENSE](./LICENSE) file included in the project.  
 
