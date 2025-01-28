@@ -1,3 +1,5 @@
+// Okutagon by Levent Özgür is licensed under CC BY-NC-SA 4.0 
+
   // URL of your Cloudflare Worker
     const workerUrl = 'https://patreon-supporters.okutagon.workers.dev/';
 
