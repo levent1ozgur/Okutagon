@@ -1,3 +1,5 @@
+// Okutagon by Levent Özgür is licensed under CC BY-NC-SA 4.0 
+
 console.log("Ü");
 document.addEventListener("DOMContentLoaded", function () {
   const selectedAppsContainer = document.getElementById(
