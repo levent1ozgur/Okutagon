@@ -1,7 +1,7 @@
 // Okutagon by Levent Özgür is licensed under CC BY-NC-SA 4.0 
 
-  // URL of your Cloudflare Worker
-    const workerUrl = 'CF_WORKER_URL';
+  // URL of Cloudflare Worker
+    const workerUrl = '/.netlify/functions/proxy-worker'; // No exposure of CF URL!
 
     // Fetch the supporter data from the Cloudflare Worker
     fetch(workerUrl)
