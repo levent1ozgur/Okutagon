@@ -60,4 +60,3 @@ document.addEventListener("DOMContentLoaded", function () {
     checkbox.addEventListener("change", generateWindowsScript);
   });
 });
-   
