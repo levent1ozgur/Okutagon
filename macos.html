@@ -13,70 +13,9 @@
   <meta property="og:url" content="https://okutagon.nelify.app/macos">
   <meta property="og:description" content="okutagon is a tool that makes it easy to install applications on your pc or mac. with just a few clicks, you can select the apps you want to install, generate a script code, and automatically install them all at once using chocolatey or homebrew.">
 
-  <title>okutagon's multi installer - install applications quickly and easily</title>
+  <title>Okutagon - Install applications quickly and easily</title>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <!-- javascript for generate code
-  <script type="text/javascript" src="script/macosscript.js" async></script> -->
-<script>
-console.log("Ü");
-document.addEventListener("DOMContentLoaded", function () {
-  const selectedAppsContainer = document.getElementById(
-    "selected-apps-container"
-  );
 
-  // Function to generate script code for Windows
-  const generateWindowsScript = () => {
-    // Get all the selected checkboxes
-    const selectedCheckboxes = document.querySelectorAll(
-      'input[type="checkbox"]:checked'
-    );
-
-    // If no checkboxes are selected, clear the textarea and return
-    if (selectedCheckboxes.length === 0) {
-      selectedAppsContainer.innerHTML = ""; // Clear the textarea
-      return;
-    }
-
-    // Create an array to store the names of the selected apps
-    const selectedApps = [];
-
-    // Loop through the selected checkboxes and push their values to the array
-    selectedCheckboxes.forEach(function (checkbox) {
-      selectedApps.push(checkbox.value);
-    });
-
-    // Construct the string with the selected apps
-    const selectedAppsString = selectedApps.join(" ");
-
-    // Construct the final command string
-    const commandString = `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install --cask ${selectedAppsString}`;
-
-    // Create a textarea element
-    const textarea = document.createElement("textarea");
-    textarea.rows = 10;
-    textarea.cols = 50;
-    textarea.value = commandString;
-    // Adjust the size of textarea based on its content
-    textarea.style.width = "100%";
-    textarea.style.height = "auto";
-    // Set textarea to be readonly
-    textarea.setAttribute("readonly", true);
-    // Disable textarea resizing
-    textarea.style.resize = "none";
-
-    // Clear the container and append the textarea
-    selectedAppsContainer.innerHTML = "";
-    selectedAppsContainer.appendChild(textarea);
-  };
-
-  // Add event listeners to checkboxes
-  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-  checkboxes.forEach(function (checkbox) {
-    checkbox.addEventListener("change", generateWindowsScript);
-  });
-});
-</script>
   <!-- stylesheets -->
   <link rel="stylesheet" href="style/style.css">
 
@@ -164,5 +103,7 @@ brew install --cask ${selectedAppsString}`;
     </footer>
 </div>
  </div>
+  <!-- javascript for generate code -->
+  <script type="text/javascript" src="script/macosscript.js"></script> 
 </body>
 </html>
