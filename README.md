@@ -1,6 +1,7 @@
-# &#11203; Okutagon  
+Okutagon: Automated Software Installation for Developers & Power Users
+======================================================================
 
-Okutagon is your ultimate post-formatting companion, designed to make installing applications on your PC seamless and efficient. Whether you're setting up a fresh system or simply need to install a batch of tools, Okutagon leverages powerful package managers—**Chocolatey** for Windows and **Homebrew** for macOS/Linux—to handle the heavy lifting.  
+**Okutagon** is a simple tool that streamlines mass software deployment across multiple platforms. Designed for both personal and enterprise use, our solution simplifies post-formatting system setups through intelligent automation of package managers.
 
 With just a few clicks, you can:  
 - Select the applications you need.  
@@ -17,6 +18,10 @@ Say goodbye to tedious manual setups and let Okutagon streamline your workflow.
 - **Batch Installation**: Install multiple applications in one go.  
 - **User-Friendly Interface**: Intuitive design for quick and easy use.  
 - **Time-Saving Efficiency**: Perfect for fresh system setups or rapid deployment.  
+
+---
+
+This tool leverages the power of [Chocolatey package manager for Windows](https://chocolatey.org/how-chocolatey-works "Learn about Chocolatey package manager") and [Homebrew package manager for macOS/Linux](https://brew.sh/ "Homebrew documentation") to ensure reliable, standardized installations.
 
 ---
 
