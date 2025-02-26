@@ -1,4 +1,4 @@
-// Okutagon by Levent Özgür is licensed under CC BY-NC-SA 4.0 
+// BatchInstallPro by Levent Özgür is licensed under CC BY-NC-SA 4.0 
 
   // URL of Cloudflare Worker
     const workerUrl = '/.netlify/functions/proxy-worker'; // No exposure of CF URL!
