@@ -117,11 +117,7 @@ a:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-.custom-btn.win {
-  background-color: #991f36;
-  color: white;
-}
-
+.custom-btn.win,
 .custom-btn.mac {
   background-color: #991f36;
   color: white;
@@ -162,51 +158,75 @@ footer a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  #content-wrap {
-    padding: 1.5rem;
-  }
+/* Responsive Styles */
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #page-container {
+    padding: 1rem;
+  }
   header img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
   }
-
   h1 {
     font-size: 2rem;
   }
-
-  h2,
-  h3 {
-    font-size: 1.4rem;
-  }
-
   p,
   li,
   form {
     font-size: 1.1rem;
   }
+}
 
-  .custom-btn {
-    padding: 10px 20px;
-    font-size: 1rem;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  header img {
+    width: 200px;
+    height: 200px;
   }
-
-  footer {
-    padding: 1rem 0;
+  h1 {
+    font-size: 2.3rem;
   }
+}
 
-  footer a {
-    font-size: 1rem;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header img {
+    width: 220px;
+    height: 220px;
   }
-
-  #page-container {
-    flex-direction: column;
-    padding: 1rem;
+  h1 {
+    font-size: 2.5rem;
   }
+  p,
+  li,
+  form {
+    font-size: 1.2rem;
+  }
+}
 
-  #selected-apps-container {
-    padding: 1rem;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header img {
+    width: 250px;
+    height: 250px;
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
+  #content-wrap {
+    padding: 2.5rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #content-wrap {
+    max-width: 1200px;
+    padding: 3rem;
+  }
+  h1 {
+    font-size: 3rem;
   }
 }
